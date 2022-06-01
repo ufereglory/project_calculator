@@ -1,0 +1,90 @@
+body{
+    margin: 2px;
+    padding: 0;
+}
+.project{
+    width: 40rem;
+    max-width: 80%;
+    margin: 10rem auto;
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    padding: 50px 30px;
+    border-radius: 5px;
+    
+}
+.calculator{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    margin-top: -20px;
+    font-size: 32px;
+
+}
+.form-control{
+    display: flex;
+   justify-content: space-between;
+}
+
+.form-control input, select {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.result_div {
+    width: 12rem;
+    margin: 20px auto;
+    background-color: black;
+    height: 50px;
+    border-radius: 5px;
+    padding: 3px;
+    display: none;
+    
+}
+.result_div p{
+    text-align: center;
+    color: white;
+}
+
+.form-action{
+    width: 15rem;
+    margin: 25px auto;
+}
+.form-action button{
+      background-color: black;
+      font: inherit;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 10px;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+}
+.form-action button:hover {
+    background-color: seagreen;
+}
+
+@media (max-width: 680px) {
+    .calculator{
+        font-size: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .form-control input, select {
+        padding: 5px;
+    }
+}
+@media (max-width: 500px) {
+    .form-control {
+        flex-direction: column;
+    }
+    .form-control input, select {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 0;
+        margin-left: -6px;
+    } 
+    .form-control select{
+        width: 104%;
+    }
+}
